@@ -7,7 +7,7 @@ This is a Python project that calculates the total length of videos inside a fol
 1. Clone the repository to your local machine:
 
     
-    `git clone`
+    `git clone https://github.com/BilalAhmed-358/Calculate-total-duration-of-video-files`
     
 
 2. Navigate to the project directory:
