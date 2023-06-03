@@ -12,7 +12,7 @@ This is a Python project that calculates the total length of videos inside a fol
 
 2. Navigate to the project directory:
 
-    `cd video-length-calculator`
+    `cd Calculate-total-duration-of-video-files`
 
 
 3. Install the required dependencies    using `pip`:
