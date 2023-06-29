@@ -15,8 +15,8 @@ def calculate_total_video_length(directory):
             if mime_type and mime_type.startswith('video'):
                 # Get the video length and add it to total_length
                 video_length = get_video_length(file_path)
-                print("Video: ", file)
-                print(convert_seconds_to_hms(round(video_length)), "\n")
+                # print("Video: ", file)
+                # print(convert_seconds_to_hms(round(video_length)), "\n")
                 total_length += video_length
 
     return convert_seconds_to_hms(round(total_length))
@@ -36,9 +36,9 @@ def get_video_length(file_path):
     return duration
 
 
-if len(sys.argv) > 1:
-    directory_path = sys.argv[1]
-    total_video_length = calculate_total_video_length(directory_path)
-    print("Total length of videos:", total_video_length)
-else:
-    print("You didn't provide the file/folder path in arguments.")
+# if len(sys.argv) > 1:
+#     directory_path = sys.argv[1]
+#     total_video_length = calculate_total_video_length(directory_path)
+#     print("Total length of videos:", total_video_length)
+# else:
+#     print("You didn't provide the file/folder path in arguments.")
