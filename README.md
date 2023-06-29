@@ -23,15 +23,25 @@ This is a Python project that calculates the total length of videos inside a fol
 
 ## Usage
 
-To calculate the total length of videos, run the `video_length_calculator.py` script and provide the file path as arguments.
+### Using Command Line
 
-`python video_length_calculator.py /path/to/folder`
+To calculate the total length of videos, run the `durationCli.py` script and provide the file path as arguments.
+
+`python durationCli.py /path/to/folder`
 
 ![Working example](Screenshots/Example.png)
 
 
 Make sure to replace `/path/to/folder` with the actual folder path of the videos you want to calculate the length for.
 
+### Using GUI
+
+1. Double click `ui.py` file.
+2. Enter the folder path in the input field
+3. Click Calculate
+4. The `total length of videos` will be displayed in the output field.
+
+![GUI Example](Screenshots/GUI%20Example.png)
 ## Output
 
 The script will process each video file and display the duration of each video, as well as the total length of all videos combined.
