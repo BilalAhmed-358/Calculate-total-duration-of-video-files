@@ -4,9 +4,9 @@ from duration import calculate_total_video_length
 
 def printDetails():
     folderPathVar =folderPath.get()
-    duration=calculate_total_video_length(folderPathVar)
-    outputString= "The total duration of videos in the folder is "+duration+"\n"
-    durationOutput.insert("1.0",outputString)
+    calculate_total_video_length(folderPathVar,durationOutput)
+    # outputString= "The total duration of videos in the folder is "+duration+"\n"
+    # durationOutput.insert("1.0",outputString)
     
 
 root = Tk()
