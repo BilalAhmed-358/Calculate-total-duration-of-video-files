@@ -4,19 +4,21 @@ from moviepy.editor import VideoFileClip
 import sys
 
 
-def calculate_total_video_length(directory):
+def calculate_total_video_length(directory, ui_flag=False):
     total_length = 0
-
+    print_flag = ui_flag
     for root, dirs, files in os.walk(directory):
         for file in files:
             file_path = os.path.join(root, file)
             # Check if the file is a video
             mime_type, _ = mimetypes.guess_type(file_path)
             if mime_type and mime_type.startswith('video'):
-                # Get the video length and add it to total_length
+
                 video_length = get_video_length(file_path)
-                print("Video: ", file)
-                print(convert_seconds_to_hms(round(video_length)), "\n")
+                if (print_flag):
+                    print("Video: ", file)
+                    print(convert_seconds_to_hms(round(video_length)), "\n")
+
                 total_length += video_length
 
     return convert_seconds_to_hms(round(total_length))
